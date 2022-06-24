@@ -1,0 +1,26 @@
+{
+  "name": "@qapi/create-qapi",
+  "description": "Generate API from Swagger OpenAPI specs",
+  "main": "src/index.js",
+  "version": "1.1.0",
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "bin": {
+    "qapi": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://github.com:guocaoyi/qapi.git"
+  },
+  "keywords": [
+    "swagger",
+    "open-api",
+    "qapi"
+  ],
+  "scripts": {
+    "start": "pm2 start qapi.server.json"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -10,10 +10,8 @@ QAPI 通过解析 BFF 项目接口编译生成的的 Swagger.json ，直接生�
 ├── packages
 │   ├── create-qapi #
 │   ├── qapi-core # core 核心代码
-│   ├── qapi-ext-bugatti # bugatti 插件（提供 bugatti 相关的服务端内容）
-│   ├── qapi-ext-yapi # yapi 插件（提供 yapi 相关的服务端内容）
 │   ├── qapi-playground # qapi 在线转换器
-│   └── qapi-server # qapi 服务端
+│   └── yapi-plugin-typegen # yapi 插件
 ├── CONTRIBUTING.md # for contribution
 └── tsconfig.json
 ```
