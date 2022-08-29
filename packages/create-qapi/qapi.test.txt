@@ -1,0 +1,34 @@
+import axios, { AxiosResponse } from 'axios';
+
+import * as {{lname}} from '../{{name}}';
+
+const adapter = <T>(domain: string, uri: string, method: string, data: object): Promise<T> =>
+  new Promise((resolve, reject): void => {
+    axios({
+      url: `https://${domain}${uri}`,
+      method,
+      data,
+    })
+      .then((res: AxiosResponse<T>): void => {
+        // pack
+        // try-catch
+        // tracing | monitor
+        // error handing
+        resolve(res.data);
+      })
+      .catch((err): void => {
+        reject(err);
+      });
+  });
+
+{{lname}}.net.use(adapter);
+{{lname}}.net.catch((e): void => {
+  debug("INF", e);
+});
+
+(async (): Promise<void> => {
+  const res: any = await {{lname}}.{{function}}.{{method}}(
+    '****',
+    'xxxx'
+  );
+})();

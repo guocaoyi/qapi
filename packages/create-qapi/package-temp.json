@@ -1,0 +1,9 @@
+{
+  "name": "@{{scope}}/{{name}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
+  "main": "index.js",
+  "license": "ISC",
+  "author": "qapi",
+  "sideEffects": false
+}
