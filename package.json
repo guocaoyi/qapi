@@ -15,7 +15,8 @@
     "qapi"
   ],
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore --ext .js,.ts src"
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts src",
+    "fmt":""
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
@@ -36,6 +37,15 @@
     "ts-jest": "^27.1.3",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
+  },
+  "prettier": {
+    "semi": false,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "printWidth": 80,
+    "trailingComma": "all",
+    "endOfLine": "lf",
+    "useTabs": false
   },
   "lint-staged": {
     "*": [
